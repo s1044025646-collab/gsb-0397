@@ -1,0 +1,15 @@
+{
+  "name": "bibtex-interp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "受限 BibTeX 宏展开与跨条目字段继承解释后端（API + CLI）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/core.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node scripts/demo.js"
+  }
+}
+
